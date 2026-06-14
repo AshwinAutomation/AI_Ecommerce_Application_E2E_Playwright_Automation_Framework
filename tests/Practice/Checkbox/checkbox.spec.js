@@ -11,7 +11,7 @@ test.describe("CheckBoxes Demo",()=>{
     expect.soft(await bmwCheckbox.isChecked()).toBe(true);
   })
 
-test.only("Multiple CheckBox Select",async({browser})=>{
+test("Multiple CheckBox Select",async({browser})=>{
   const context = await browser.newContext();
   const page = await context.newPage();
   await page.goto("https://www.letskodeit.com/practice");

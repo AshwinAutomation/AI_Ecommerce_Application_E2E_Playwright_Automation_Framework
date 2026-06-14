@@ -45,7 +45,7 @@ test.describe("Dropdown Demo", () => {
     expect.soft(await page.locator("#carselect option").count()).toBe(3);
   });
 
-  test.only("dropdown select using select tag Print all options", async ({ browser }) => {
+  test("dropdown select using select tag Print all options", async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto("https://www.letskodeit.com/practice");

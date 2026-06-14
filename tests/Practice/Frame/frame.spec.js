@@ -16,7 +16,7 @@ test.describe("Frames Demo", () => {
     expect.soft(textValue).toBe("Welcome to Playwright");
   });
 
- test.only("should switch to frame and get the text in nested frame", async ({ browser }) => {
+ test("should switch to frame and get the text in nested frame", async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto("https://demo.automationtesting.in/Frames.html");

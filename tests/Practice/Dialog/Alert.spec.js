@@ -12,7 +12,7 @@ test.describe("Alerts Demo", () => {
     });
   });
 
-  test.only("should display an Confirmation alert and accept it", async ({ browser }) => {
+  test("should display an Confirmation alert and accept it", async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto("https://www.letskodeit.com/practice");
