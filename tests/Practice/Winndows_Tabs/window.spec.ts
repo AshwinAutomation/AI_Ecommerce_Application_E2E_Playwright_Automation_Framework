@@ -14,6 +14,7 @@ test.describe("Switch to Window Demo", () => {
        const childPageTitle = await childPage.title();
        console.log("Child page title:", childPageTitle);
        await childPage.bringToFront();
+       
        console.log(" page title:", await page.title());
    })
 })
